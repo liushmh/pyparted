@@ -57,7 +57,7 @@ def check_mod_version(module, version):
         sys.exit(1)
     return
 
-check_mod_version('libparted', need_libparted_version)
+check_mod_version('parted', need_libparted_version)
 
 # This list is in the format necessary for the define_macros parameter
 # for an Extension() module definition.  See:
@@ -68,7 +68,7 @@ setup(name='pyparted',
       version=pyparted_version,
       author='David Cantrell',
       author_email='dcantrell@redhat.com',
-      url='https://github.com/dcantrell/pyparted/',
+      url='https://github.com/liushmh/pyparted/',
       description='Python bindings for GNU parted',
       license='GPLv2+',
       packages=['parted'],
