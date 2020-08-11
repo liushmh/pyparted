@@ -35,7 +35,7 @@ from distutils.version import LooseVersion
 pyparted_version = '3.11.6'
 python_version = sys.version_info
 
-need_libparted_version = '3.2'
+need_libparted_version = '3.1'
 need_python_version = (3, 5)
 
 if python_version < need_python_version:
@@ -57,7 +57,7 @@ def check_mod_version(module, version):
         sys.exit(1)
     return
 
-check_mod_version('parted', need_libparted_version)
+check_mod_version('parted-3.1-32.el7.x86_64', need_libparted_version)
 
 # This list is in the format necessary for the define_macros parameter
 # for an Extension() module definition.  See:
